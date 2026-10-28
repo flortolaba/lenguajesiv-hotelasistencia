@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lenguajesiv-hotelasistencia/static/css/main.a23175d9.css",
-    "main.js": "/lenguajesiv-hotelasistencia/static/js/main.550ffc7b.js",
+    "main.js": "/lenguajesiv-hotelasistencia/static/js/main.59ff41d6.js",
     "index.html": "/lenguajesiv-hotelasistencia/index.html",
     "main.a23175d9.css.map": "/lenguajesiv-hotelasistencia/static/css/main.a23175d9.css.map",
-    "main.550ffc7b.js.map": "/lenguajesiv-hotelasistencia/static/js/main.550ffc7b.js.map"
+    "main.59ff41d6.js.map": "/lenguajesiv-hotelasistencia/static/js/main.59ff41d6.js.map"
   },
   "entrypoints": [
     "static/css/main.a23175d9.css",
-    "static/js/main.550ffc7b.js"
+    "static/js/main.59ff41d6.js"
   ]
 }
