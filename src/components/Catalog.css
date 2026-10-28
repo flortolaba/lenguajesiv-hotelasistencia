@@ -1,144 +1,32 @@
-.catalogo-intro {
-  max-width: 620px;
-  margin: 0 auto 56px;
-  text-align: center;
-}
-
-.catalogo-intro h1 {
-  margin: 0 0 16px;
-  font-size: 42px;
-  line-height: 1.15;
-  letter-spacing: -0.01em;
-}
-
-.catalogo-lead {
-  margin: 0;
-  font-size: 17px;
-  line-height: 1.7;
-  color: var(--texto-suave);
-}
-
-.grilla-habitaciones {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-}
-
-.habitacion {
-  display: flex;
-  flex-direction: column;
-  background: var(--tarjeta);
-  border: 1px solid var(--borde);
-  border-radius: 18px;
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.habitacion:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(60, 45, 30, 0.1);
-}
-
 .habitacion-imagen {
-  height: 190px;
+  position: relative;
+  height: 220px;
   display: flex;
   align-items: flex-end;
-  padding: 18px 22px;
+  padding: 16px 18px;
+  overflow: hidden;
+}
+
+.habitacion-imagen img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.habitacion:hover .habitacion-imagen img {
+  transform: scale(1.05);
 }
 
 .habitacion-imagen span {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
-  letter-spacing: 0.1em;
-  color: rgba(43, 42, 40, 0.55);
-}
-
-.habitacion-cuerpo {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 24px 24px 22px;
-}
-
-.habitacion-cuerpo h3 {
-  margin: 0 0 8px;
-  font-size: 22px;
-}
-
-.habitacion-desc {
-  margin: 0 0 16px;
-  font-size: 14.5px;
-  line-height: 1.6;
-  color: var(--texto-suave);
-}
-
-.habitacion-datos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 0 0 22px;
-  padding: 0;
-  list-style: none;
-}
-
-.habitacion-datos li {
+  position: relative;
   padding: 5px 12px;
-  font-size: 12px;
-  color: var(--texto-suave);
-  background: var(--fondo);
-  border: 1px solid var(--borde);
-  border-radius: 999px;
-}
-
-.habitacion-pie {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.precio {
-  margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 22px;
-}
-
-.precio span {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 12px;
-  color: var(--texto-suave);
-}
-
-.btn-reservar {
-  padding: 10px 22px;
-  font-family: inherit;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  background: var(--acento);
-  border: none;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--texto);
+  background: rgba(255, 255, 255, 0.85);
   border-radius: 999px;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-
-.btn-reservar:hover {
-  background: var(--acento-oscuro);
-}
-
-.aviso {
-  margin: 32px 0 0;
-  text-align: center;
-  font-size: 14px;
-  color: var(--acento-oscuro);
-}
-
-@media (max-width: 760px) {
-  .grilla-habitaciones {
-    grid-template-columns: 1fr;
-  }
-  .catalogo-intro h1 {
-    font-size: 32px;
-  }
 }
